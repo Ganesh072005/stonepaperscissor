@@ -1,0 +1,15 @@
+/outputs
+/__pycache__/
+*.pyc
+.env
+*.env
+weights/*.pt
+.venv/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+dist/
+build/
+*.egg-info/

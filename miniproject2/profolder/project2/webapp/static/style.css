@@ -1,0 +1,256 @@
+/* =========================================================
+   ADVANCED PROFESSIONAL UI — FULL FILE
+   Left panel = fixed. Right panel = ONE full scroll area.
+   Clean, aesthetic, dashboard-grade interface.
+========================================================= */
+
+/* ---------- Global Theme Tokens ---------- */
+:root {
+  --bg-main: #0b0f19;
+  --bg-panel: #111726;
+  --bg-card: #151d31;
+  --bg-card-2: #1c253b;
+
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  --text-1: #e8ecf7;
+  --text-2: #a9b3c9;
+  --text-3: #7c8ba7;
+
+  --accent: #4da3ff;
+  --accent-soft: rgba(77, 163, 255, 0.18);
+
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-1: 0 4px 20px rgba(0,0,0,0.25);
+  --shadow-2: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg-main);
+  color: var(--text-1);
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  overflow: hidden; /* Prevent entire page scroll */
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+header {
+  padding: 24px 32px;
+  background: #0f1423;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #dbe7ff;
+}
+
+header .sub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+/* =========================================================
+   MAIN LAYOUT (Left fixed, Right scrolls)
+========================================================= */
+.split {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+
+/* ---------- LEFT FIXED VIDEO PANE ---------- */
+.pane-left {
+  background: var(--bg-main);
+  border-right: 1px solid var(--border);
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-frame {
+  width: 98%;
+  height: 98%;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---------- RIGHT PANE — FULL PAGE SCROLL ---------- */
+.pane-right {
+  background: var(--bg-panel);
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  overflow-y: auto; /* MASTER SCROLL */
+  overflow-x: hidden;
+}
+
+/* Smooth scrollbar */
+.pane-right::-webkit-scrollbar {
+  width: 10px;
+}
+.pane-right::-webkit-scrollbar-thumb {
+  background: #2c3956;
+  border-radius: 8px;
+}
+.pane-right::-webkit-scrollbar-thumb:hover {
+  background: #3e5275;
+}
+
+/* =========================================================
+   CONTROLS AREA
+========================================================= */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: var(--bg-card);
+  color: var(--text-1);
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--bg-card-2);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pill {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+/* =========================================================
+   TITLES
+========================================================= */
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-1);
+}
+
+/* =========================================================
+   SCENE SUMMARY (NO INTERNAL SCROLL)
+========================================================= */
+.scene-summary {
+  background: var(--bg-card);
+  padding: 18px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-1);
+  color: var(--text-2);
+  line-height: 1.58;
+  font-size: 15px;
+
+  /* IMPORTANT: allow pane-right to scroll, not this box */
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+/* =========================================================
+   DETECTED OBJECTS — FULLY EXPANDS, NO INTERNAL SCROLL
+========================================================= */
+
+#desc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* Remove previous scroll behavior */
+  overflow: visible !important;
+  flex: unset !important;
+  min-height: auto !important;
+}
+
+.desc-item {
+  background: var(--bg-card-2);
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  display: flex;
+  gap: 14px;
+  box-shadow: var(--shadow-1);
+}
+
+.thumb {
+  width: 62px;
+  height: 62px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.label {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.text {
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+  padding: 12px 24px;
+  background: #0f1423;
+  border-top: 1px solid var(--border);
+  color: var(--text-3);
+  font-size: 12px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}

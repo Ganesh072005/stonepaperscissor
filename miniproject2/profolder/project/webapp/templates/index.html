@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOLOv8 + Gemini | Live</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>YOLOv8 + Gemini Real‑Time Detection</h1>
+    <p class="sub">Left: live annotated video • Right: Gemini descriptions with thumbnails</p>
+  </header>
+
+  <main class="split">
+    <section class="pane pane-left">
+      <div class="video-frame">
+        <img id="video" src="/video_feed" alt="Live video" />
+      </div>
+    </section>
+    <section class="pane pane-right">
+      <div class="desc-header">
+        <h2>Detected Objects</h2>
+        <div class="controls">
+          <button id="btn-webcam" class="btn">Webcam</button>
+          <button id="btn-droidcam" class="btn">DroidCam</button>
+          <label class="btn">
+            <input id="file-video" type="file" accept="video/*" hidden />
+            Upload Video
+          </label>
+          <a class="btn" href="/analyze" style="text-decoration:none;display:inline-block">Analyze Image</a>
+          <span id="status-pill" class="pill">LIVE</span>
+        </div>
+      </div>
+      <div id="gemini-note" class="gemini-note" style="display:none;">Gemini descriptions disabled. Set GEMINI_API_KEY to enable.</div>
+      <ul id="desc-list" class="desc-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Press 'q' in desktop app to quit. Ensure webcam access is allowed.</small>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

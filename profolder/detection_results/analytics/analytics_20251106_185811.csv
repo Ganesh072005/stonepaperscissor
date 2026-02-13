@@ -1,0 +1,16 @@
+Metric,Value
+Total Detections,13528
+Frames Processed,669
+Average FPS,2.60
+Elapsed Time (s),257.59
+Total Alerts,49
+
+Detections by Class
+bird,13519
+F18,6
+B52,3
+
+Average Speeds (km/h)
+bird,18.66
+F18,15.68
+B52,19.30

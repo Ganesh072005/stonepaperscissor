@@ -1,0 +1,12 @@
+{
+    "elapsed_time": 0.7317893505096436,
+    "fps": 1.3665134636129443,
+    "total_detections": 11,
+    "frame_count": 1,
+    "detections_by_class": {
+        "bird": 11
+    },
+    "alerts": 0,
+    "avg_speeds": {},
+    "alerts_details": []
+}

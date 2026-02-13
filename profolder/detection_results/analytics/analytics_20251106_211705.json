@@ -1,0 +1,14 @@
+{
+    "elapsed_time": 22.946722745895386,
+    "fps": 2.9198069258924866,
+    "total_detections": 67,
+    "frame_count": 67,
+    "detections_by_class": {
+        "p-airplane": 67
+    },
+    "alerts": 0,
+    "avg_speeds": {
+        "p-airplane": 7.288775602128456
+    },
+    "alerts_details": []
+}

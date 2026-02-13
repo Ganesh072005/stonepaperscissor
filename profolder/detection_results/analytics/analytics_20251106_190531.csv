@@ -1,0 +1,46 @@
+Metric,Value
+Total Detections,2086
+Frames Processed,946
+Average FPS,2.31
+Elapsed Time (s),409.45
+Total Alerts,273
+
+Detections by Class
+p-airplane,223
+C17,169
+C5,42
+Be200,124
+A400M,5
+C130,116
+U2,225
+MQ9,113
+drone,79
+E2,29
+bird,160
+RQ4,15
+V22,540
+Tu95,150
+F16,33
+EF2000,20
+A10,26
+US2,17
+
+Average Speeds (km/h)
+p-airplane,12.24
+C17,16.73
+C5,35.39
+Be200,19.49
+A400M,17.56
+C130,19.91
+U2,11.19
+MQ9,18.63
+drone,21.97
+E2,102.75
+bird,97.93
+RQ4,43.42
+V22,57.72
+Tu95,10.49
+F16,107.91
+EF2000,7.54
+A10,17.27
+US2,2.41

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analyze Image | YOLOv8 + Gemini</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+    .container{max-width:1000px;margin:24px auto;padding:0 16px}
+    .card{background:#0b1220;border:1px solid #1e2a44;border-radius:12px;padding:16px}
+    .row{display:flex;gap:16px;flex-wrap:wrap}
+    .col{flex:1 1 420px}
+    .drop{border:2px dashed #2c3e70;border-radius:12px;padding:24px;text-align:center;color:#9bb0d1}
+    .btn-primary{background:#3b82f6;border:none;color:#fff;padding:10px 14px;border-radius:8px;cursor:pointer}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .meta{font-size:14px;color:#9bb0d1}
+    img.fluid{max-width:100%;height:auto;border-radius:8px;border:1px solid #1e2a44}
+    ul.records{list-style:none;padding:0;margin:0}
+    ul.records li{padding:8px 0;border-bottom:1px solid #18233a}
+    .error{color:#f87171}
+    a.nav{color:#9bb0d1;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+    <div>
+      <h1>Analyze Single Image</h1>
+      <p class="sub">Upload an image to get detections and a concise Gemini description.</p>
+    </div>
+    <nav><a class="nav" href="/">← Back to Live</a></nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <form method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col">
+            <div class="drop">
+              <p><strong>Select an image</strong></p>
+              <input type="file" name="file" accept="image/*" required />
+            </div>
+          </div>
+          <div class="col" style="display:flex;align-items:end">
+            <button class="btn-primary" type="submit">Analyze</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    {% if result %}
+      <div style="height:16px"></div>
+      {% if result.error %}
+        <div class="card"><p class="error">{{ result.error }}</p></div>
+      {% else %}
+        <div class="grid">
+          <div class="card">
+            <h3>Annotated</h3>
+            {% if result.annotated_data_url %}
+              <img class="fluid" src="{{ result.annotated_data_url }}" alt="Annotated result" />
+            {% else %}
+              <p class="meta">No annotated image available.</p>
+            {% endif %}
+          </div>
+          <div class="card">
+            <h3>Description</h3>
+            <p class="meta"><strong>File:</strong> {{ result.filename }}</p>
+            <p>{{ result.summary or '(No description)' }}</p>
+            <h4>Detections</h4>
+            <ul class="records">
+              {% for r in result.records %}
+              <li>
+                <strong>{{ r.label }}</strong>
+                <span class="meta">conf: {{ '%.2f'|format(r.confidence) }} | bbox: [{{ '%.0f'|format(r.bbox[0]) }}, {{ '%.0f'|format(r.bbox[1]) }}, {{ '%.0f'|format(r.bbox[2]) }}, {{ '%.0f'|format(r.bbox[3]) }}]</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+    {% endif %}
+  </main>
+
+  <footer class="container">
+    <small>Set environment variable GEMINI_API_KEY to enable descriptions.</small>
+  </footer>
+</body>
+</html>

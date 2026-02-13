@@ -1,0 +1,9 @@
+ultralytics>=8.0.0
+opencv-python
+google-generativeai
+pyttsx3
+colorama
+numpy
+pillow
+flask
+python-dotenv

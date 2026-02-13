@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['aircraft', 'bird', 'drone', 'hot air ballon']
+
+roboflow:
+  workspace: myproject-ozq4a
+  project: flying-object-is-lpbf3
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/myproject-ozq4a/flying-object-is-lpbf3/dataset/1

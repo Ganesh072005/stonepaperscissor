@@ -1,0 +1,362 @@
+{
+    "elapsed_time": 257.5914795398712,
+    "fps": 2.597135593129931,
+    "total_detections": 13528,
+    "frame_count": 669,
+    "detections_by_class": {
+        "bird": 13519,
+        "F18": 6,
+        "B52": 3
+    },
+    "alerts": 49,
+    "avg_speeds": {
+        "bird": 18.661880970231596,
+        "F18": 15.683979025555244,
+        "B52": 19.29852612142759
+    },
+    "alerts_details": [
+        {
+            "time": "18:54:07",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:07",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:08",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:08",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:08",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:09",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:09",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:09",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:10",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:10",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:10",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:10",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:11",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:11",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:11",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:12",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:12",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:13",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:13",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:13",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:14",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:14",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:14",
+            "object_id": 20,
+            "class": "bird",
+            "speed": 106.36766425939794,
+            "position": "[368 393]"
+        },
+        {
+            "time": "18:54:14",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:14",
+            "object_id": 23,
+            "class": "bird",
+            "speed": 133.98965930249994,
+            "position": "[264 445]"
+        },
+        {
+            "time": "18:54:14",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:15",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:15",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:16",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 317.95317391087633,
+            "position": "[739 392]"
+        },
+        {
+            "time": "18:54:16",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 320.35792982225365,
+            "position": "[598 438]"
+        },
+        {
+            "time": "18:54:16",
+            "object_id": 1,
+            "class": "bird",
+            "speed": 320.35792982225365,
+            "position": "[598 438]"
+        },
+        {
+            "time": "18:54:19",
+            "object_id": 22,
+            "class": "bird",
+            "speed": 149.80499324121345,
+            "position": "[324 319]"
+        },
+        {
+            "time": "18:54:29",
+            "object_id": 32,
+            "class": "bird",
+            "speed": 116.07864919958365,
+            "position": "[611 200]"
+        },
+        {
+            "time": "18:54:36",
+            "object_id": 52,
+            "class": "bird",
+            "speed": 126.1891152199745,
+            "position": "[526 195]"
+        },
+        {
+            "time": "18:54:39",
+            "object_id": 51,
+            "class": "bird",
+            "speed": 160.36454470985785,
+            "position": "[543 228]"
+        },
+        {
+            "time": "18:54:48",
+            "object_id": 31,
+            "class": "bird",
+            "speed": 113.16833479379292,
+            "position": "[375 242]"
+        },
+        {
+            "time": "18:54:48",
+            "object_id": 58,
+            "class": "bird",
+            "speed": 121.65230454044017,
+            "position": "[314 237]"
+        },
+        {
+            "time": "18:54:48",
+            "object_id": 69,
+            "class": "bird",
+            "speed": 264.44787463694996,
+            "position": "[228 318]"
+        },
+        {
+            "time": "18:54:49",
+            "object_id": 69,
+            "class": "bird",
+            "speed": 134.7189073589895,
+            "position": "[315 339]"
+        },
+        {
+            "time": "18:54:49",
+            "object_id": 32,
+            "class": "bird",
+            "speed": 174.21173324434838,
+            "position": "[609 341]"
+        },
+        {
+            "time": "18:55:05",
+            "object_id": 69,
+            "class": "bird",
+            "speed": 145.2991397083961,
+            "position": "[669 399]"
+        },
+        {
+            "time": "18:55:45",
+            "object_id": 69,
+            "class": "bird",
+            "speed": 101.88699622621134,
+            "position": "[ 73 317]"
+        },
+        {
+            "time": "18:55:45",
+            "object_id": 69,
+            "class": "bird",
+            "speed": 127.89680840427569,
+            "position": "[ 14 312]"
+        },
+        {
+            "time": "18:55:58",
+            "object_id": 84,
+            "class": "bird",
+            "speed": 120.22490923265445,
+            "position": "[394 266]"
+        },
+        {
+            "time": "18:56:44",
+            "object_id": 94,
+            "class": "bird",
+            "speed": 110.35042365120309,
+            "position": "[487 225]"
+        },
+        {
+            "time": "18:57:12",
+            "object_id": 114,
+            "class": "bird",
+            "speed": 109.73565327640785,
+            "position": "[463 268]"
+        },
+        {
+            "time": "18:57:12",
+            "object_id": 119,
+            "class": "bird",
+            "speed": 117.07917321197652,
+            "position": "[431 269]"
+        },
+        {
+            "time": "18:57:12",
+            "object_id": 114,
+            "class": "bird",
+            "speed": 109.73565327640785,
+            "position": "[463 268]"
+        },
+        {
+            "time": "18:57:16",
+            "object_id": 128,
+            "class": "bird",
+            "speed": 149.29022473022138,
+            "position": "[579 198]"
+        }
+    ]
+}
